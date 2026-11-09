@@ -1,0 +1,65 @@
+/* Style de fond pour bien voir la bordure blanche du formulaire */
+body {
+    background-color: #e9ecef;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Alignement des labels et input */
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+input {
+    width: 250px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    box-sizing: border-box; /* pour s'assurer que les margin/padding n'impactent pas la largeur width */
+}
+
+/* Le formulaire */
+form {
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    max-width: 500px;
+}
+
+/* Le bouton de soumission (et bouton retour) */
+.btn-primary {
+    border-radius: 5px;
+    padding: 6px 12px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Cas du formulaire non valide : griser le bouton submit */
+form:invalid input[type="submit"] {
+    background-color: gray;
+    border-color: gray;
+    cursor: not-allowed;
+}
+
+/* Cas d'un champ non valide : bordure rouge */
+input:invalid {
+    border: 2px solid red;
+}
+
+/* Cacher l'émoji qui se trouve juste après un champ invalide */
+input:invalid + .icon-ok {
+    display: none;
+}
+
+/* Cas d'un champ valide : afficher l'émoji */
+input:valid + .icon-ok {
+    display: inline-block;
+    color: green;
+}
