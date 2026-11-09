@@ -1,41 +1,92 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>TP1</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <!-- Place favicon.ico in the root directory -->
-
-  <style>
-    body {
-      background-color: #e9ebee;
-      font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-      font-size: 16px;
-      margin: 0 auto;
-      max-width: 800px;
-    }
-  </style>
-
-  <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-  <!--<link rel="stylesheet" href="style.css">-->
-  <!--<script src="main.js"></script>-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>CV - Abdelhak RABEHI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="cv.css" />
 </head>
-
 <body>
-  <nav>
-    <a href="..">🏠 Index</a> / TP1
-  </nav>
-  <h1>TP 1</h1>
-  <!-- Add your site or application content here -->
-  <p>Hello world! my name is Abdelhak and This is HTML5 Boilerplate.</p>
-  <img src="../galilee.png" alt="Logo Galilee" />
+    <div class="header-cv">
+        <img src="photo.jpg" alt="Photo de profil" width="100" class="photo-profil" />
+        <div class="titre-cv">
+            <!-- Informations issues du CV[cite: 3] -->
+            <h2>ABDELHAK RABEHI</h2>
+            <p>Étudiant en Master Ingénierie et Innovation en Réseaux</p>
+            <p>A la recherche d'un stage de fin d'études de 6 mois (à partir de mars 2027)</p>
+            <p>
+                <a href="mailto:rabehi.abdelhak.st45@gmail.com">rabehi.abdelhak.st45@gmail.com</a> | 
+                <a href="https://www.linkedin.com/in/abdelhak-rabehi" target="_blank">LinkedIn</a> | 
+                Drancy, Île-de-France
+            </p>
+        </div>
+    </div>
 
-  <h2><a href="experiences/index.html">Expériences</a></h2>
+    <h1>Profil</h1>
+    <table width="100%" border="1">
+        <tr>
+            <!-- Profil issu du CV[cite: 3] -->
+            <td style="padding: 15px;">Étudiant en Master 2 Ingénierie Réseaux à Sorbonne Paris Nord, je recherche un stage de fin d'études de 6 mois à partir de mars 2027. Fort d'une double compétence technique, je combine la maîtrise des infrastructures réseaux traditionnelles (switching & routing, sécurité) et des environnements modernes (Cloud AWS). Adaptable et curieux, je suis prêt relever des défis techniques variés, de l'architecture sur site aux environnements hybrides.</td>
+        </tr>
+    </table>
+
+    <!-- Le TP demande d'entourer les titres par des liens vers les nouvelles pages -->
+    <a href="formations.html" class="lien-titre"><h1>Formations</h1></a>
+    <table width="100%" border="1">
+        <tr>
+            <!-- Formation issue du CV[cite: 3] -->
+            <td width="20%">2025 - 2027</td>
+            <td><strong>Master 2 Ingénierie et Innovation en Réseaux</strong> - <a href="https://galilee.univ-paris13.fr/" target="_blank">Université Sorbonne Paris Nord</a></td>
+        </tr>
+        <tr>
+            <!-- Formation issue du CV[cite: 3] -->
+            <td>2024 - 2025</td>
+            <td><strong>Licence 3 Sciences pour l'Ingénieur</strong> (Parcours Électronique, Signal et Réseaux) - <a href="https://galilee.univ-paris13.fr/" target="_blank">Université Sorbonne Paris Nord</a></td>
+        </tr>
+        <tr>
+            <!-- Formation issue du CV[cite: 3] -->
+            <td>2021 - 2024</td>
+            <td><strong>Licence Télécommunications</strong> - <a href="https://umbb.dz/fr/" target="_blank">Université M'Hamed Bougara - Algérie</a></td>
+        </tr>
+    </table>
+
+    <a href="experiences.html" class="lien-titre"><h1>Expériences & Projets</h1></a>
+    <table width="100%" border="1">
+        <tr>
+            <!-- Expérience issue du CV[cite: 3] -->
+            <td width="20%">Mars - Juil. 2024</td>
+            <td><strong>Stagiaire Administrateur Réseau</strong> - <a href="https://www.algerietelecom.dz/" target="_blank">Algérie Télécom</a></td>
+        </tr>
+        <tr>
+            <!-- Projet issu du CV[cite: 3] -->
+            <td>Juin - Août 2026</td>
+            <td><strong>Projet Cloud AWS</strong> - Infrastructure as Code et automatisation réseau Cloud AWS</td>
+        </tr>
+    </table>
+
+    <h1>Compétences</h1>
+    <table width="100%" border="1">
+        <tr>
+            <!-- Compétences issues du CV[cite: 3] -->
+            <td width="25%"><strong>Réseaux & Protocoles</strong></td>
+            <td>ICMP, IPv4/IPv6, VLAN, STP, EtherChannel, MPLS, QoS, OSPF, RIP, DHCP, NAT, DNS, SSH, WiFi/802.11</td>
+        </tr>
+        <tr>
+            <!-- Compétences issues du CV[cite: 3] -->
+            <td><strong>Cloud & Virtualisation</strong></td>
+            <td>AWS (VPC, EC2, IAM, S3, EBS), VMWare, SDN/NFV</td>
+        </tr>
+        <tr>
+            <!-- Compétences issues du CV[cite: 3] -->
+            <td><strong>Systèmes & Sécurité</strong></td>
+            <td>Linux, Firewall, Proxy, VPN (IPSec/TLS)</td>
+        </tr>
+        <tr>
+            <!-- Langues issues du CV[cite: 3] -->
+            <td><strong>Langues</strong></td>
+            <td>Français (Courant), Anglais technique (Intermédiaire)</td>
+        </tr>
+    </table>
 </body>
-
 </html>
