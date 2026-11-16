@@ -86,11 +86,11 @@ window.onload = function () {
           `Le champ « ${item.label} » est obligatoire.`
         );
 
-      } else if (value.length < 5) {
+      } else if (value.length < 3) {
 
         addError(
           field,
-          `Le champ « ${item.label} » doit contenir au moins 5 caractères.`
+          `Le champ « ${item.label} » doit contenir au moins 3 caractères.`
         );
 
       }
